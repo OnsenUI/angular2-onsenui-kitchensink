@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
-import {OnsSwitch} from './lib/onsen';
+import {ONS_DIRECTIVES} from './lib/onsen';
 
 import {Home} from './components/home/home';
 import {Animations} from './components/animations/animations';
@@ -12,11 +12,11 @@ import {Tabbar} from './components/tabbar/tabbar';
   selector: 'kitchen-sink',
   providers: [],
   pipes: [],
-  directives: [ROUTER_DIRECTIVES, Tabbar],
+  directives: [ROUTER_DIRECTIVES, Tabbar, ONS_DIRECTIVES],
   templateUrl: 'app/kitchen-sink.html',
 })
 @Routes([
-  { path: '/',           component: Home,       },
+  { path: '/home',       component: Home,       },
   { path: '/forms',      component: Forms,      },
   { path: '/dialogs',    component: Dialogs,    },
   { path: '/animations', component: Animations, },

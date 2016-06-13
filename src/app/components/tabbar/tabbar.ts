@@ -15,7 +15,7 @@ export class Tabbar {
 
   constructor() {
     this.tabs = [
-      { path: '/',           label: 'Home',       },
+      { path: '/home',       label: 'Home',       },
       { path: '/forms',      label: 'Forms',      },
       { path: '/dialogs',    label: 'Dialogs',    },
       { path: '/animations', label: 'Animations', },

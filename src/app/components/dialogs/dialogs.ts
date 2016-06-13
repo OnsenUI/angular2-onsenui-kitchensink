@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {onsNotification, OnsAlertDialog, ONS_DIRECTIVES} from '../../lib/onsen';
+import {onsNotification, OnsPopover, ONS_DIRECTIVES, PopoverFactory, AlertDialogFactory} from '../../lib/onsen';
 
 @Component({
   selector: 'dialogs',
@@ -8,13 +8,12 @@ import {onsNotification, OnsAlertDialog, ONS_DIRECTIVES} from '../../lib/onsen';
   pipes: []
 })
 export class Dialogs {
-  target: boolean = true;
+  public isOpen: boolean = false;
 
-  constructor() { }
-
-  ngOnInit() {
-
-  }
+  // constructor(
+  //   private _popoverFactory: PopoverFactory,
+  //   private _alertDialogFactory: AlertDialogFactory
+  // ) { }
 
   alert() {
     onsNotification.alert('Be careful!');
@@ -29,12 +28,10 @@ export class Dialogs {
   }
 
   showDialog(){
-
   }
 
   showPopover(){
-
+    // this._popoverFactory.createPopover(OnsPopover);
   }
-
 
 }
