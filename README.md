@@ -2,6 +2,8 @@
 
 This is a kitchen sink that demonstrates the seamless integration between Angular 2 and Onsen UI.
 
+You can see it in action [here](http://onsenui.github.io/angular2-onsenui-kitchensink/).
+
 You can also clone this repo and take a look at the code. Use the following commands to run it:
 
 ```
