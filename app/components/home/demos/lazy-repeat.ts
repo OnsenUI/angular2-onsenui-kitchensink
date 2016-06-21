@@ -1,5 +1,5 @@
 import {Component, Inject, forwardRef} from '@angular/core';
-import {ONS_DIRECTIVES} from '../../../lib/onsen';
+import {ONS_DIRECTIVES} from 'angular2-onsenui';
 
 @Component({
   selector: 'ons-page',
@@ -10,19 +10,23 @@ import {ONS_DIRECTIVES} from '../../../lib/onsen';
     <div class="left"><ons-back-button>Back</ons-back-button></div>
     <div class="center">Infinite Scroll (lazy repeat)</div>
   </ons-toolbar>
-  <ons-pull-hook></ons-pull-hook>
-  <ons-list>
-    <!--
-    <ons-list-item *onsLazyRepeat="let i of items">
-    -->
-    <ons-lazy-repeat id="lazyRepeat">
-      <ons-list-item>
-        <div class="center">
-          Item #
-        </div>
-      </ons-list-item>
-     </ons-lazy-repeat>
-  </ons-list>
+
+  <div class="page__background"></div>
+  <div class="page__content">
+    <ons-pull-hook></ons-pull-hook>
+    <ons-list>
+      <!--
+      <ons-list-item *onsLazyRepeat="let i of items">
+      -->
+      <ons-lazy-repeat id="lazyRepeat">
+        <ons-list-item>
+          <div class="center">
+            Item #
+          </div>
+        </ons-list-item>
+       </ons-lazy-repeat>
+    </ons-list>
+  </div>
   `,
   pipes: []
 })

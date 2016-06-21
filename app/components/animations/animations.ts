@@ -1,5 +1,5 @@
 import {Component, Inject, forwardRef} from '@angular/core';
-import {ONS_DIRECTIVES, OnsNavigator} from '../../lib/onsen';
+import {ONS_DIRECTIVES, OnsNavigator} from 'angular2-onsenui';
 
 @Component({
   selector: 'ons-page',

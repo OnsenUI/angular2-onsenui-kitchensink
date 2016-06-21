@@ -6,7 +6,6 @@ import {ROUTER_PROVIDERS} from '@angular/router';
 
 import {KitchenSink} from './app/kitchen-sink';
 
-
 // enableProdMode()
 
 bootstrap(KitchenSink, [

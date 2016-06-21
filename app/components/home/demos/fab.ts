@@ -1,5 +1,5 @@
 import {Component, Inject, forwardRef} from '@angular/core';
-import {OnsNavigator, OnsPage} from '../../../lib/onsen';
+import {OnsNavigator, OnsPage} from 'angular2-onsenui';
 
 @Component({
   selector: 'ons-page',
@@ -10,7 +10,11 @@ import {OnsNavigator, OnsPage} from '../../../lib/onsen';
     <div class="left"><ons-back-button>Back</ons-back-button></div>
     <div class="center">Floating Action Button</div>
   </ons-toolbar>
-  <ons-fab position="bottom right" ripple>+</ons-fab>
+
+  <div class="page__background"></div>
+  <div class="page__content">
+    <ons-fab position="bottom right" ripple>+</ons-fab>
+  </div>
   `,
   pipes: []
 })

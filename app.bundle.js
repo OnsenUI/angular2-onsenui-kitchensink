@@ -36,12 +36,12 @@ webpackJsonp([0],{
 	};
 	var core_1 = __webpack_require__(4);
 	var router_1 = __webpack_require__(301);
-	var onsen_1 = __webpack_require__(324);
-	var home_1 = __webpack_require__(342);
-	var animations_1 = __webpack_require__(348);
-	var forms_1 = __webpack_require__(349);
-	var dialogs_1 = __webpack_require__(350);
-	var tabbar_1 = __webpack_require__(351);
+	var angular2_onsenui_1 = __webpack_require__(324);
+	var home_1 = __webpack_require__(341);
+	var animations_1 = __webpack_require__(347);
+	var forms_1 = __webpack_require__(348);
+	var dialogs_1 = __webpack_require__(349);
+	var tabbar_1 = __webpack_require__(350);
 	var KitchenSink = (function () {
 	    function KitchenSink() {
 	    }
@@ -50,7 +50,7 @@ webpackJsonp([0],{
 	            selector: 'kitchen-sink',
 	            providers: [],
 	            pipes: [],
-	            directives: [router_1.ROUTER_DIRECTIVES, tabbar_1.Tabbar, onsen_1.ONS_DIRECTIVES],
+	            directives: [router_1.ROUTER_DIRECTIVES, tabbar_1.Tabbar, angular2_onsenui_1.ONS_DIRECTIVES],
 	            templateUrl: 'app/kitchen-sink.html',
 	        }),
 	        router_1.Routes([
@@ -75,21 +75,10 @@ webpackJsonp([0],{
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(325));
-	
-
-/***/ },
-
-/***/ 325:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
 	var browser = __webpack_require__(160);
 	__export(__webpack_require__(4));
 	__export(__webpack_require__(162));
+	__export(__webpack_require__(325));
 	__export(__webpack_require__(326));
 	__export(__webpack_require__(327));
 	__export(__webpack_require__(328));
@@ -105,25 +94,24 @@ webpackJsonp([0],{
 	__export(__webpack_require__(338));
 	__export(__webpack_require__(339));
 	__export(__webpack_require__(340));
-	__export(__webpack_require__(341));
 	function bootstrap(type, providers) {
 	    if (providers === void 0) { providers = []; }
 	    return browser.bootstrap(type, providers);
 	}
 	exports.bootstrap = bootstrap;
 	;
-	var ons_navigator_2 = __webpack_require__(326);
-	var ons_carousel_2 = __webpack_require__(327);
-	var ons_tabbar_2 = __webpack_require__(328);
-	var ons_alert_dialog_2 = __webpack_require__(329);
-	var ons_popover_2 = __webpack_require__(330);
-	var ons_switch_2 = __webpack_require__(331);
-	var ons_range_2 = __webpack_require__(332);
-	var ons_input_2 = __webpack_require__(333);
-	var ons_pull_hook_2 = __webpack_require__(334);
-	var ons_lazy_repeat_2 = __webpack_require__(335);
-	var ons_page_2 = __webpack_require__(337);
-	var ons_splitter_2 = __webpack_require__(336);
+	var ons_navigator_2 = __webpack_require__(325);
+	var ons_carousel_2 = __webpack_require__(326);
+	var ons_tabbar_2 = __webpack_require__(327);
+	var ons_alert_dialog_2 = __webpack_require__(328);
+	var ons_popover_2 = __webpack_require__(329);
+	var ons_switch_2 = __webpack_require__(330);
+	var ons_range_2 = __webpack_require__(331);
+	var ons_input_2 = __webpack_require__(332);
+	var ons_pull_hook_2 = __webpack_require__(333);
+	var ons_lazy_repeat_2 = __webpack_require__(334);
+	var ons_page_2 = __webpack_require__(336);
+	var ons_splitter_2 = __webpack_require__(335);
 	exports.ONS_DIRECTIVES = [
 	    ons_navigator_2.OnsNavigator,
 	    ons_carousel_2.OnsCarousel,
@@ -143,7 +131,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 326:
+/***/ 325:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -228,7 +216,7 @@ webpackJsonp([0],{
 	    };
 	    OnsNavigator.prototype._createAnimator = function (options) {
 	        if (options === void 0) { options = {}; }
-	        return this._navigator._animatorFactory.newAnimator(options);
+	        return this._navigator.animatorFactory.newAnimator(options);
 	    };
 	    OnsNavigator.prototype.ngOnInit = function () {
 	        if (this.pageComponentType) {
@@ -358,7 +346,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 327:
+/***/ 326:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -400,7 +388,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 328:
+/***/ 327:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -460,7 +448,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 329:
+/***/ 328:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -525,7 +513,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 330:
+/***/ 329:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -566,7 +554,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 331:
+/***/ 330:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -627,7 +615,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 332:
+/***/ 331:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -688,7 +676,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 333:
+/***/ 332:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -749,7 +737,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 334:
+/***/ 333:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -792,7 +780,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 335:
+/***/ 334:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -814,6 +802,7 @@ webpackJsonp([0],{
 	    }
 	    return ItemContext;
 	}());
+	exports.ItemContext = ItemContext;
 	var OnsLazyRepeat = (function () {
 	    function OnsLazyRepeat(_elementRef, _templateRef, _viewContainer) {
 	        this._elementRef = _elementRef;
@@ -876,7 +865,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 336:
+/***/ 335:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -923,6 +912,7 @@ webpackJsonp([0],{
 	    };
 	    return BasePageLoaderDirectiveImpl;
 	}());
+	exports.BasePageLoaderDirectiveImpl = BasePageLoaderDirectiveImpl;
 	var OnsSplitterSide = (function (_super) {
 	    __extends(OnsSplitterSide, _super);
 	    function OnsSplitterSide(_elementRef, _viewContainer, _resolver) {
@@ -963,7 +953,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 337:
+/***/ 336:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1001,7 +991,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 338:
+/***/ 337:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1010,7 +1000,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 339:
+/***/ 338:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1019,7 +1009,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 340:
+/***/ 339:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1083,7 +1073,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 341:
+/***/ 340:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1147,7 +1137,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 342:
+/***/ 341:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1164,12 +1154,12 @@ webpackJsonp([0],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(4);
-	var onsen_1 = __webpack_require__(324);
-	var pull_hook_1 = __webpack_require__(343);
-	var lazy_repeat_1 = __webpack_require__(344);
-	var splitter_1 = __webpack_require__(345);
-	var fab_1 = __webpack_require__(346);
-	var speed_dial_1 = __webpack_require__(347);
+	var angular2_onsenui_1 = __webpack_require__(324);
+	var pull_hook_1 = __webpack_require__(342);
+	var lazy_repeat_1 = __webpack_require__(343);
+	var splitter_1 = __webpack_require__(344);
+	var fab_1 = __webpack_require__(345);
+	var speed_dial_1 = __webpack_require__(346);
 	var Home = (function () {
 	    function Home(_navigator) {
 	        this._navigator = _navigator;
@@ -1191,8 +1181,8 @@ webpackJsonp([0],{
 	            directives: [],
 	            pipes: []
 	        }),
-	        __param(0, core_1.Inject(core_1.forwardRef(function () { return onsen_1.OnsNavigator; }))), 
-	        __metadata('design:paramtypes', [onsen_1.OnsNavigator])
+	        __param(0, core_1.Inject(core_1.forwardRef(function () { return angular2_onsenui_1.OnsNavigator; }))), 
+	        __metadata('design:paramtypes', [angular2_onsenui_1.OnsNavigator])
 	    ], Home);
 	    return Home;
 	}());
@@ -1201,7 +1191,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 343:
+/***/ 342:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1269,7 +1259,7 @@ webpackJsonp([0],{
 	            selector: 'ons-page',
 	            providers: [],
 	            directives: [],
-	            template: "\n  <ons-toolbar>\n    <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n    <div class=\"center\">Pull to refresh</div>\n  </ons-toolbar>\n\n  <div class=\"scroll\">\n    <ons-pull-hook height=\"64px\" threshold-height=\"128px\" (changestate)=\"onChangeState(pullHook)\" [onAction]=\"boundOnAction\" #pullHook>\n      {{message}}\n    </ons-pull-hook>\n\n    <ons-list>\n      <ons-list-item *ngFor=\"let item of data\">\n        <div class=\"left\"><img class=\"list__item__thumbnail\" [src]=\"item.url\"></div>\n        <div class=\"center\">{{item.name}}</div>\n      </ons-list-item>\n    </ons-list>\n  </div>\n  ",
+	            template: "\n  <ons-toolbar>\n    <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n    <div class=\"center\">Pull to refresh</div>\n  </ons-toolbar>\n\n  <div class=\"page__background\"></div>\n  <div class=\"page__content\">\n    <div class=\"scroll\">\n      <ons-pull-hook height=\"64px\" threshold-height=\"128px\" (changestate)=\"onChangeState(pullHook)\" [onAction]=\"boundOnAction\" #pullHook>\n        {{message}}\n      </ons-pull-hook>\n\n      <ons-list>\n        <ons-list-item *ngFor=\"let item of data\">\n          <div class=\"left\"><img class=\"list__item__thumbnail\" [src]=\"item.url\"></div>\n          <div class=\"center\">{{item.name}}</div>\n        </ons-list-item>\n      </ons-list>\n    </div>\n  </div>\n  ",
 	            pipes: []
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -1281,7 +1271,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 344:
+/***/ 343:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1295,7 +1285,7 @@ webpackJsonp([0],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(4);
-	var onsen_1 = __webpack_require__(324);
+	var angular2_onsenui_1 = __webpack_require__(324);
 	var LazyRepeat = (function () {
 	    function LazyRepeat() {
 	        this.items = [];
@@ -1319,8 +1309,8 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: 'ons-page',
 	            providers: [],
-	            directives: [onsen_1.ONS_DIRECTIVES],
-	            template: "\n  <ons-toolbar>\n    <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n    <div class=\"center\">Infinite Scroll (lazy repeat)</div>\n  </ons-toolbar>\n  <ons-pull-hook></ons-pull-hook>\n  <ons-list>\n    <!--\n    <ons-list-item *onsLazyRepeat=\"let i of items\">\n    -->\n    <ons-lazy-repeat id=\"lazyRepeat\">\n      <ons-list-item>\n        <div class=\"center\">\n          Item #\n        </div>\n      </ons-list-item>\n     </ons-lazy-repeat>\n  </ons-list>\n  ",
+	            directives: [angular2_onsenui_1.ONS_DIRECTIVES],
+	            template: "\n  <ons-toolbar>\n    <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n    <div class=\"center\">Infinite Scroll (lazy repeat)</div>\n  </ons-toolbar>\n\n  <div class=\"page__background\"></div>\n  <div class=\"page__content\">\n    <ons-pull-hook></ons-pull-hook>\n    <ons-list>\n      <!--\n      <ons-list-item *onsLazyRepeat=\"let i of items\">\n      -->\n      <ons-lazy-repeat id=\"lazyRepeat\">\n        <ons-list-item>\n          <div class=\"center\">\n            Item #\n          </div>\n        </ons-list-item>\n       </ons-lazy-repeat>\n    </ons-list>\n  </div>\n  ",
 	            pipes: []
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -1332,7 +1322,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 345:
+/***/ 344:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1354,7 +1344,7 @@ webpackJsonp([0],{
 	            selector: 'ons-page',
 	            providers: [],
 	            directives: [],
-	            template: "\n  <ons-splitter>\n    <ons-splitter-side side=\"right\" width=\"240px\" swipeable collapse #menu>\n      <ons-page>\n        <ons-list>\n          <ons-list-header>Menu</ons-list-header>\n          <ons-list-item modifier=\"longdivider\" tappable *ngFor=\"let i of [1, 2, 3, 4]\">\n            Menu item #{{i}}\n          </ons-list-item>\n        </ons-list>\n      </ons-page>\n    </ons-splitter-side>\n\n    <ons-splitter-content>\n      <ons-page>\n        <ons-toolbar>\n          <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n          <div class=\"center\">Sliding menu</div>\n          <div class=\"right\" (click)=\"menu.open()\">\n            <ons-toolbar-button>=</ons-toolbar-button>\n          </div>\n        </ons-toolbar>\n        <p>Swipe left to open menu!</p>\n      </ons-page>\n    </ons-splitter-content>\n  </ons-splitter>\n  ",
+	            template: "\n  <div class=\"page__background\"></div>\n  <div class=\"page__content\">\n    <ons-splitter>\n      <ons-splitter-side side=\"right\" width=\"240px\" swipeable collapse #menu>\n        <ons-page>\n          <ons-list>\n            <ons-list-header>Menu</ons-list-header>\n            <ons-list-item modifier=\"longdivider\" tappable *ngFor=\"let i of [1, 2, 3, 4]\">\n              Menu item #{{i}}\n            </ons-list-item>\n          </ons-list>\n        </ons-page>\n      </ons-splitter-side>\n\n      <ons-splitter-content>\n        <ons-page>\n          <ons-toolbar>\n            <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n            <div class=\"center\">Sliding menu</div>\n            <div class=\"right\" (click)=\"menu.open()\">\n              <ons-toolbar-button>=</ons-toolbar-button>\n            </div>\n          </ons-toolbar>\n          <p>Swipe left to open menu!</p>\n        </ons-page>\n      </ons-splitter-content>\n    </ons-splitter>\n  </div>\n  ",
 	            pipes: []
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -1366,7 +1356,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 346:
+/***/ 345:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1388,7 +1378,7 @@ webpackJsonp([0],{
 	            selector: 'ons-page',
 	            providers: [],
 	            directives: [],
-	            template: "\n  <ons-toolbar>\n    <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n    <div class=\"center\">Floating Action Button</div>\n  </ons-toolbar>\n  <ons-fab position=\"bottom right\" ripple>+</ons-fab>\n  ",
+	            template: "\n  <ons-toolbar>\n    <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n    <div class=\"center\">Floating Action Button</div>\n  </ons-toolbar>\n\n  <div class=\"page__background\"></div>\n  <div class=\"page__content\">\n    <ons-fab position=\"bottom right\" ripple>+</ons-fab>\n  </div>\n  ",
 	            pipes: []
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -1400,7 +1390,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 347:
+/***/ 346:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1422,7 +1412,7 @@ webpackJsonp([0],{
 	            selector: 'ons-page',
 	            providers: [],
 	            directives: [],
-	            template: "\n  <ons-toolbar>\n    <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n    <div class=\"center\">Speed dial</div>\n  </ons-toolbar>\n  <p>A speed dial is a Floating action button that expands into a menu.</p>\n  <ons-speed-dial position=\"bottom right\">\n    <ons-fab>+</ons-fab>\n    <ons-speed-dial-item>a</ons-speed-dial-item>\n    <ons-speed-dial-item>b</ons-speed-dial-item>\n    <ons-speed-dial-item>c</ons-speed-dial-item>\n  </ons-speed-dial>\n  ",
+	            template: "\n  <ons-toolbar>\n    <div class=\"left\"><ons-back-button>Back</ons-back-button></div>\n    <div class=\"center\">Speed dial</div>\n  </ons-toolbar>\n\n  <div class=\"page__background\"></div>\n  <div class=\"page__content\">\n    <p>A speed dial is a Floating action button that expands into a menu.</p>\n    <ons-speed-dial position=\"bottom right\">\n      <ons-fab>+</ons-fab>\n      <ons-speed-dial-item>a</ons-speed-dial-item>\n      <ons-speed-dial-item>b</ons-speed-dial-item>\n      <ons-speed-dial-item>c</ons-speed-dial-item>\n    </ons-speed-dial>\n  </div>\n  ",
 	            pipes: []
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -1434,7 +1424,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 348:
+/***/ 347:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1451,7 +1441,7 @@ webpackJsonp([0],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(4);
-	var onsen_1 = __webpack_require__(324);
+	var angular2_onsenui_1 = __webpack_require__(324);
 	var TempPage = (function () {
 	    function TempPage(_navigator) {
 	        this._navigator = _navigator;
@@ -1465,11 +1455,11 @@ webpackJsonp([0],{
 	            template: "\n    <div class=\"waiting\">Please wait...</div>\n   ",
 	            styles: ["\n    .waiting {\n      text-align: center;\n      font-size: 24px;\n      margin: 100px auto 0;\n    }\n  "],
 	            providers: [],
-	            directives: [onsen_1.ONS_DIRECTIVES],
+	            directives: [angular2_onsenui_1.ONS_DIRECTIVES],
 	            pipes: []
 	        }),
-	        __param(0, core_1.Inject(core_1.forwardRef(function () { return onsen_1.OnsNavigator; }))), 
-	        __metadata('design:paramtypes', [onsen_1.OnsNavigator])
+	        __param(0, core_1.Inject(core_1.forwardRef(function () { return angular2_onsenui_1.OnsNavigator; }))), 
+	        __metadata('design:paramtypes', [angular2_onsenui_1.OnsNavigator])
 	    ], TempPage);
 	    return TempPage;
 	}());
@@ -1491,11 +1481,11 @@ webpackJsonp([0],{
 	            selector: 'animations',
 	            templateUrl: 'app/components/animations/animations.html',
 	            providers: [],
-	            directives: [onsen_1.ONS_DIRECTIVES],
+	            directives: [angular2_onsenui_1.ONS_DIRECTIVES],
 	            pipes: []
 	        }),
-	        __param(0, core_1.Inject(core_1.forwardRef(function () { return onsen_1.OnsNavigator; }))), 
-	        __metadata('design:paramtypes', [onsen_1.OnsNavigator])
+	        __param(0, core_1.Inject(core_1.forwardRef(function () { return angular2_onsenui_1.OnsNavigator; }))), 
+	        __metadata('design:paramtypes', [angular2_onsenui_1.OnsNavigator])
 	    ], Animations);
 	    return Animations;
 	}());
@@ -1504,7 +1494,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 349:
+/***/ 348:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1518,7 +1508,7 @@ webpackJsonp([0],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(4);
-	var onsen_1 = __webpack_require__(324);
+	var angular2_onsenui_1 = __webpack_require__(324);
 	var Forms = (function () {
 	    function Forms() {
 	        this.target = true;
@@ -1543,7 +1533,7 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: 'forms',
 	            templateUrl: 'app/components/forms/forms.html',
-	            directives: [onsen_1.ONS_DIRECTIVES],
+	            directives: [angular2_onsenui_1.ONS_DIRECTIVES],
 	            pipes: []
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -1555,7 +1545,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 350:
+/***/ 349:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1569,7 +1559,7 @@ webpackJsonp([0],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(4);
-	var onsen_1 = __webpack_require__(324);
+	var angular2_onsenui_1 = __webpack_require__(324);
 	var Dialogs = (function () {
 	    function Dialogs() {
 	        this.isOpen = false;
@@ -1579,13 +1569,13 @@ webpackJsonp([0],{
 	    //   private _alertDialogFactory: AlertDialogFactory
 	    // ) { }
 	    Dialogs.prototype.alert = function () {
-	        onsen_1.onsNotification.alert('Be careful!');
+	        angular2_onsenui_1.onsNotification.alert('Be careful!');
 	    };
 	    Dialogs.prototype.confirm = function () {
-	        onsen_1.onsNotification.confirm('This is dangerous. Are you sure?');
+	        angular2_onsenui_1.onsNotification.confirm('This is dangerous. Are you sure?');
 	    };
 	    Dialogs.prototype.prompt = function () {
-	        onsen_1.onsNotification.prompt('What\'s 42?');
+	        angular2_onsenui_1.onsNotification.prompt('What\'s 42?');
 	    };
 	    Dialogs.prototype.showDialog = function () {
 	    };
@@ -1596,7 +1586,7 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: 'dialogs',
 	            templateUrl: 'app/components/dialogs/dialogs.html',
-	            directives: [onsen_1.ONS_DIRECTIVES],
+	            directives: [angular2_onsenui_1.ONS_DIRECTIVES],
 	            pipes: []
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -1608,7 +1598,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 351:
+/***/ 350:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

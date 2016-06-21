@@ -3,26 +3,29 @@
 		<div class="center">Home</div>
 	</ons-toolbar>
 
-	<p>This is a kitchen sink example made with the Angular 2 bindings for Onsen UI.</p>
+	<div class="page__background"></div>
+	<div class="page__content">
+		<p>This is a kitchen sink example made with the Angular 2 bindings for Onsen UI.</p>
 
-	<p><a href="https://onsen.io/v2/angular2.html" target="_blank"><strong>Official site with docs</strong></a></p>
+		<p><a href="https://onsen.io/v2/angular2.html" target="_blank"><strong>Official site with docs</strong></a></p>
 
-	<ons-list>
-		<ons-list-header>Todos</ons-list-header>
-		<ons-list-item>
-			<div class="center" (click)="push('PullHook')">Pull hook</div>
-		</ons-list-item>
-		<ons-list-item>
-			<div class="center" (click)="push('LazyRepeat')">Infinite scroll (lazy repeat)</div>
-		</ons-list-item>
-		<ons-list-item>
-			<div class="center" (click)="push('Splitter')">Side menu</div>
-		</ons-list-item>
-		<ons-list-item>
-			<div class="center" (click)="push('Fab')">Floating Action Button (FAB)</div>
-		</ons-list-item>
-		<ons-list-item>
-			<div class="center" (click)="push('SpeedDial')">Speed dial</div>
-		</ons-list-item>
-	</ons-list>
+		<ons-list>
+			<ons-list-header>Todos</ons-list-header>
+			<ons-list-item>
+				<div class="center" (click)="push('PullHook')">Pull hook</div>
+			</ons-list-item>
+			<ons-list-item>
+				<div class="center" (click)="push('LazyRepeat')">Infinite scroll (lazy repeat)</div>
+			</ons-list-item>
+			<ons-list-item>
+				<div class="center" (click)="push('Splitter')">Side menu</div>
+			</ons-list-item>
+			<ons-list-item>
+				<div class="center" (click)="push('Fab')">Floating Action Button (FAB)</div>
+			</ons-list-item>
+			<ons-list-item>
+				<div class="center" (click)="push('SpeedDial')">Speed dial</div>
+			</ons-list-item>
+		</ons-list>
+	</div>
 </ons-page>
