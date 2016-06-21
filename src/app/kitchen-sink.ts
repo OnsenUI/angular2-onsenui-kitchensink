@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
-import {ONS_DIRECTIVES} from './lib/onsen';
+import {ONS_DIRECTIVES} from 'angular2-onsenui';
 
 import {Home} from './components/home/home';
 import {Animations} from './components/animations/animations';

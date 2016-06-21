@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {onsNotification, OnsPopover, ONS_DIRECTIVES, PopoverFactory, AlertDialogFactory} from '../../lib/onsen';
+import {onsNotification, OnsPopover, ONS_DIRECTIVES, PopoverFactory, AlertDialogFactory} from 'angular2-onsenui';
 
 @Component({
   selector: 'dialogs',

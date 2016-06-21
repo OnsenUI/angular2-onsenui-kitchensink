@@ -19,6 +19,7 @@ var webpackConfig = {
   ],
 
   module: {
+    noParse: /node_modules\/onsenui\/js\/onsenui.js/,
     loaders: [
       // .ts files for TypeScript
       { test: /\.ts$/, loader: 'awesome-typescript-loader' },
@@ -71,7 +72,7 @@ var defaultConfig = {
       'angular2/router': path.join(__dirname, 'node_modules', '@angular', 'router', 'index.js'),
       'angular2/http': path.join(__dirname, 'node_modules', '@angular', 'http', 'index.js'),
       'angular2/http/testing': path.join(__dirname, 'node_modules', '@angular', 'http', 'testing.js'),
-      'onsen': path.join(__dirname, 'src', 'angular2', 'angular2-onsenui.js')
+      'angular2-onsenui': path.join(__dirname, 'node_modules', 'angular2-onsenui', 'src', 'angular2-onsenui.ts')
     },
   },
 

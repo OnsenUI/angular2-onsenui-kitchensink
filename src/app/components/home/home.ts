@@ -1,5 +1,5 @@
 import {Component, Inject, forwardRef} from '@angular/core';
-import {OnsNavigator, OnsPage} from '../../lib/onsen';
+import {OnsNavigator, OnsPage} from 'angular2-onsenui';
 import {PullHook} from './demos/pull-hook';
 import {LazyRepeat} from './demos/lazy-repeat';
 import {Splitter} from './demos/splitter';

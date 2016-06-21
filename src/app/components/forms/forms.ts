@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ONS_DIRECTIVES} from '../../lib/onsen';
+import {ONS_DIRECTIVES} from 'angular2-onsenui';
 
 @Component({
   selector: 'forms',
