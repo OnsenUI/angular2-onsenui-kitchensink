@@ -4,11 +4,14 @@
 			<div class="center">Animations</div>
 		</ons-toolbar>
 
-		<ons-list>
-			<ons-list-header>Page Transitions</ons-list-header>
-			<ons-list-item *ngFor="let animation of animations" (click)="push(animation)">
-				{{animation}}
-			</ons-list-item>
-		</ons-list>
+		<div class="page__background"></div>
+		<div class="page__content">
+			<ons-list>
+				<ons-list-header>Page Transitions</ons-list-header>
+				<ons-list-item *ngFor="let animation of animations" (click)="push(animation)">
+					{{animation}}
+				</ons-list-item>
+			</ons-list>
+		</div>
 	</ons-page>
 </ons-navigator>

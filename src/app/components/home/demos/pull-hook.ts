@@ -11,17 +11,20 @@ import {OnsNavigator, OnsPage} from 'angular2-onsenui';
     <div class="center">Pull to refresh</div>
   </ons-toolbar>
 
-  <div class="scroll">
-    <ons-pull-hook height="64px" threshold-height="128px" (changestate)="onChangeState(pullHook)" [onAction]="boundOnAction" #pullHook>
-      {{message}}
-    </ons-pull-hook>
+  <div class="page__background"></div>
+  <div class="page__content">
+    <div class="scroll">
+      <ons-pull-hook height="64px" threshold-height="128px" (changestate)="onChangeState(pullHook)" [onAction]="boundOnAction" #pullHook>
+        {{message}}
+      </ons-pull-hook>
 
-    <ons-list>
-      <ons-list-item *ngFor="let item of data">
-        <div class="left"><img class="list__item__thumbnail" [src]="item.url"></div>
-        <div class="center">{{item.name}}</div>
-      </ons-list-item>
-    </ons-list>
+      <ons-list>
+        <ons-list-item *ngFor="let item of data">
+          <div class="left"><img class="list__item__thumbnail" [src]="item.url"></div>
+          <div class="center">{{item.name}}</div>
+        </ons-list-item>
+      </ons-list>
+    </div>
   </div>
   `,
   pipes: []

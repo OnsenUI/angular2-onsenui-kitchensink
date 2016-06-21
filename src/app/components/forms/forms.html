@@ -3,56 +3,59 @@
 		<div class="center">Forms</div>
 	</ons-toolbar>
 
-	<ons-list>
-		<ons-list-header>Switches</ons-list-header>
-		<ons-list-item>
-			<div class="center">Switch {{switchEnabled ? 'on' : 'off'}}</div>
-			<div class="right">
-				<ons-switch [(value)]="switchEnabled"></ons-switch>
-			</div>
-		</ons-list-item>
-		<ons-list-item>
-			<div class="center">Disabled switch</div>
-			<div class="right">
-				<ons-switch disabled></ons-switch>
-			</div>
-		</ons-list-item>
-	</ons-list>
+	<div class="page__background"></div>
+	<div class="page__content">
+		<ons-list>
+			<ons-list-header>Switches</ons-list-header>
+			<ons-list-item>
+				<div class="center">Switch {{switchEnabled ? 'on' : 'off'}}</div>
+				<div class="right">
+					<ons-switch [(value)]="switchEnabled"></ons-switch>
+				</div>
+			</ons-list-item>
+			<ons-list-item>
+				<div class="center">Disabled switch</div>
+				<div class="right">
+					<ons-switch disabled></ons-switch>
+				</div>
+			</ons-list-item>
+		</ons-list>
 
-	<ons-list>
-		<ons-list-header>Radio buttons</ons-list-header>
-		<ons-list-item *ngFor="let item of vegetables; let i = index" tappable>
-	        <div class="left">
-	          <ons-input [attr.input-id]="'radio' + i" name="vegetable" type="radio" [value]="item" [checked]="item == selectedVegetable" (click)="selectedVegetable = item"></ons-input>
-	        </div>
-	        <label [attr.for]="'radio' + i" class="center">
-	          {{item}}
-	        </label>
-		</ons-list-item>
-		<ons-list-item>I like {{selectedVegetable}}</ons-list-item>
-	</ons-list>
+		<ons-list>
+			<ons-list-header>Radio buttons</ons-list-header>
+			<ons-list-item *ngFor="let item of vegetables; let i = index" tappable>
+				<div class="left">
+					<ons-input [attr.input-id]="'radio' + i" name="vegetable" type="radio" [value]="item" [checked]="item == selectedVegetable" (click)="selectedVegetable = item"></ons-input>
+				</div>
+				<label [attr.for]="'radio' + i" class="center">
+					{{item}}
+				</label>
+			</ons-list-item>
+			<ons-list-item>I like {{selectedVegetable}}</ons-list-item>
+		</ons-list>
 
-	<ons-list>
-		<ons-list-header>Checkboxes</ons-list-header>
-		<ons-list-item *ngFor="let color of colors; let i = index">
-			<label class="left">
-				<ons-input [attr.input-id]="'checkbox' + i" type="checkbox"></ons-input>
-			</label>
-			<label [attr.for]="'checkbox' + i" class="center">{{color}}</label>
-		</ons-list-item>
-	</ons-list>
+		<ons-list>
+			<ons-list-header>Checkboxes</ons-list-header>
+			<ons-list-item *ngFor="let color of colors; let i = index">
+				<label class="left">
+					<ons-input [attr.input-id]="'checkbox' + i" type="checkbox"></ons-input>
+				</label>
+				<label [attr.for]="'checkbox' + i" class="center">{{color}}</label>
+			</ons-list-item>
+		</ons-list>
 
-	<ons-list>
-		<ons-list-header>Text</ons-list-header>
-		<ons-list-item>
-			<div className="center">
-				<input [(ngModel)]="name"/>
-				<ons-input [(value)]="name"></ons-input>
-				<!-- [(value)] -->
-			</div>
-		</ons-list-item>
-		<ons-list-item>
-			<div class="center">Hi my name is {{name}}!</div>
-		</ons-list-item>
-	</ons-list>
+		<ons-list>
+			<ons-list-header>Text</ons-list-header>
+			<ons-list-item>
+				<div className="center">
+					<input [(ngModel)]="name"/>
+					<ons-input [(value)]="name"></ons-input>
+					<!-- [(value)] -->
+				</div>
+			</ons-list-item>
+			<ons-list-item>
+				<div class="center">Hi my name is {{name}}!</div>
+			</ons-list-item>
+		</ons-list>
+	</div>
 </ons-page>

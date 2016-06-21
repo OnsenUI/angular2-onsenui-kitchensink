@@ -2,25 +2,29 @@
 	<ons-toolbar>
 		<div class="center">Dialogs</div>
 	</ons-toolbar>
-<!--
-	<ons-list>
-		<ons-list-header>Dialogs (Todo)</ons-list-header>
-		<ons-list-item (click)="showDialog()">Show dialog</ons-list-item>
-		<ons-list-item (click)="showPopover()">Popover</ons-list-item>
-	</ons-list>
- -->
-	<ons-list>
-		<ons-list-header>Notifications</ons-list-header>
-		<ons-list-item (click)="alert()">Alert Dialog</ons-list-item>
-		<ons-list-item (click)="confirm()">Confirmation Dialog</ons-list-item>
-		<ons-list-item (click)="prompt()">Prompt Dialog</ons-list-item>
-	</ons-list>
-</ons-page>
 
-<!--
-<ons-dialog cancelable [isOpen]="isOpen" #dialog>
-  <p>I am a ons-dialog!</p>
-  <p>
-    <ons-button (click)="isOpen = false">Close me!</ons-button>
-  </p>
-</ons-dialog> -->
+	<div class="page__background"></div>
+	<div class="page__content">
+	<!--
+		<ons-list>
+			<ons-list-header>Dialogs (Todo)</ons-list-header>
+			<ons-list-item (click)="showDialog()">Show dialog</ons-list-item>
+			<ons-list-item (click)="showPopover()">Popover</ons-list-item>
+		</ons-list>
+	 -->
+		<ons-list>
+			<ons-list-header>Notifications</ons-list-header>
+			<ons-list-item (click)="alert()">Alert Dialog</ons-list-item>
+			<ons-list-item (click)="confirm()">Confirmation Dialog</ons-list-item>
+			<ons-list-item (click)="prompt()">Prompt Dialog</ons-list-item>
+		</ons-list>
+
+	<!--
+	<ons-dialog cancelable [isOpen]="isOpen" #dialog>
+	  <p>I am a ons-dialog!</p>
+	  <p>
+	    <ons-button (click)="isOpen = false">Close me!</ons-button>
+	  </p>
+	</ons-dialog> -->
+	</div>
+</ons-page>
