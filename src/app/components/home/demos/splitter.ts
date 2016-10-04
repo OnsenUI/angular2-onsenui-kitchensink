@@ -1,10 +1,7 @@
-import {Component, Inject, forwardRef} from '@angular/core';
-import {OnsNavigator, OnsPage} from 'angular2-onsenui';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'ons-page',
-  providers: [],
-  directives: [],
+  selector: 'ons-page[splitter]',
   template: `
   <div class="page__background"></div>
   <div class="page__content">
@@ -35,7 +32,7 @@ import {OnsNavigator, OnsPage} from 'angular2-onsenui';
     </ons-splitter>
   </div>
   `,
-  pipes: []
+  providers: [],
 })
 export class Splitter {
 

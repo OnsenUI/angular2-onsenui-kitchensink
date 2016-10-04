@@ -13,10 +13,10 @@ tabbar {
 	bottom: 0;
 	height: 49px;
 }
-.tab-bar--material a.router-link-active {
+.tab-bar--material a.active-link {
 	background-color: #26a69a;
 }
-.tab-bar:not(.tab-bar--material) a.router-link-active {
+.tab-bar:not(.tab-bar--material) a.active-link {
 	color: royalblue;
 }
 main {

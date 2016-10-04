@@ -1,10 +1,7 @@
-import {Component, Inject, forwardRef} from '@angular/core';
-import {OnsNavigator, OnsPage} from 'angular2-onsenui';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'ons-page',
-  providers: [],
-  directives: [],
+  selector: 'ons-page[speed-dial]',
   template: `
   <ons-toolbar>
     <div class="left"><ons-back-button>Back</ons-back-button></div>
@@ -22,7 +19,7 @@ import {OnsNavigator, OnsPage} from 'angular2-onsenui';
     </ons-speed-dial>
   </div>
   `,
-  pipes: []
+  providers: [],
 })
 export class SpeedDial {
 }

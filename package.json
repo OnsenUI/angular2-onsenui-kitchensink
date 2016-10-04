@@ -1,6 +1,6 @@
 {
   "name": "angular2-onsenui-kitchensink",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Kitchen Sink example for Angular 2 bindings for Onsen UI.",
   "scripts": {
     "typings-install": "typings install",
@@ -16,7 +16,6 @@
     "awesome-typescript-loader": "~0.16.2",
     "es6-promise": "3.0.2",
     "es6-shim": "0.35.0",
-    "reflect-metadata": "0.1.2",
     "source-map-loader": "^0.1.5",
     "typescript": "~1.8.9",
     "typings": "~1.0.3",
@@ -25,19 +24,20 @@
     "webpack-merge": "^0.8.4"
   },
   "dependencies": {
-    "@angular/common": "2.0.0-rc.1",
-    "@angular/compiler": "2.0.0-rc.1",
-    "@angular/core": "2.0.0-rc.1",
-    "@angular/http": "2.0.0-rc.1",
-    "@angular/platform-browser": "2.0.0-rc.1",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
-    "@angular/platform-server": "2.0.0-rc.1",
-    "@angular/router": "2.0.0-rc.1",
-    "angular2-onsenui": "^0.1.0-beta.7",
-    "onsenui": "^2.0.0-rc.10",
-    "core-js": "^2.2.0",
-    "rxjs": "5.0.0-beta.6",
-    "zone.js": "~0.6.12"
+    "@angular/common": "^2.0.0",
+    "@angular/compiler": "^2.0.0",
+    "@angular/core": "^2.0.0",
+    "@angular/http": "^2.0.0",
+    "@angular/platform-browser": "^2.0.0",
+    "@angular/platform-browser-dynamic": "^2.0.0",
+    "@angular/platform-server": "^2.0.0",
+    "@angular/router": "^3.0.0",
+    "angular2-onsenui": "^1.0.0-rc.1",
+    "core-js": "^2.4.1",
+    "onsenui": "^2.0.0",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0-beta.12",
+    "zone.js": "^0.6.25"
   },
   "repository": {
     "type": "git",
