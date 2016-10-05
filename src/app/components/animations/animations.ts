@@ -1,8 +1,8 @@
-import {Component, Inject, forwardRef} from '@angular/core';
-import {ONS_DIRECTIVES, OnsNavigator} from 'angular2-onsenui';
+import {Component} from '@angular/core';
+import {OnsNavigator} from 'angular2-onsenui';
 
 @Component({
-  selector: 'ons-page',
+  selector: 'ons-page[temp]',
   template: `
     <div class="waiting">Please wait...</div>
    `,
@@ -13,14 +13,11 @@ import {ONS_DIRECTIVES, OnsNavigator} from 'angular2-onsenui';
       margin: 100px auto 0;
     }
   `],
-  providers: [],
-  directives: [ONS_DIRECTIVES],
-  pipes: []
 })
 export class TempPage {
   animations = ['none', 'fade', 'slide', 'lift'];
 
-  constructor(@Inject(forwardRef(() => OnsNavigator)) private _navigator : OnsNavigator) {
+  constructor(private _navigator : OnsNavigator) {
   }
 
   ngOnInit() {
@@ -31,19 +28,16 @@ export class TempPage {
 @Component({
   selector: 'animations',
   templateUrl: 'app/components/animations/animations.html',
-  providers: [],
-  directives: [ONS_DIRECTIVES],
-  pipes: []
 })
 export class Animations {
   animations = ['none', 'fade', 'slide', 'lift'];
 
-  constructor(@Inject(forwardRef(() => OnsNavigator)) private _navigator : OnsNavigator) {
+  constructor(private _navigator : OnsNavigator) {
   }
 
   push(animation) {
-    this._navigator.pushComponent(TempPage, { animation });
-    setTimeout(() => this._navigator.popComponent(), 1500);
+    this._navigator.element.pushPage(TempPage, { animation });
+    setTimeout(() => this._navigator.element.popPage(), 1500);
   }
 
   ngOnInit() {

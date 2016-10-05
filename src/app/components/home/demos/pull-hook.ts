@@ -1,10 +1,7 @@
-import {Component, Inject, forwardRef} from '@angular/core';
-import {OnsNavigator, OnsPage} from 'angular2-onsenui';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'ons-page',
-  providers: [],
-  directives: [],
+  selector: 'ons-page[pull-hook]',
   template: `
   <ons-toolbar>
     <div class="left"><ons-back-button>Back</ons-back-button></div>
@@ -14,7 +11,7 @@ import {OnsNavigator, OnsPage} from 'angular2-onsenui';
   <div class="page__background"></div>
   <div class="page__content">
     <div class="scroll">
-      <ons-pull-hook height="64px" threshold-height="128px" (changestate)="onChangeState(pullHook)" [onAction]="boundOnAction" #pullHook>
+      <ons-pull-hook height="64px" threshold-height="128px" (changestate)="onChangeState($event)" (action)="onAction($event)">
         {{message}}
       </ons-pull-hook>
 
@@ -27,7 +24,6 @@ import {OnsNavigator, OnsPage} from 'angular2-onsenui';
     </div>
   </div>
   `,
-  pipes: []
 })
 export class PullHook {
   data: Array<any> = [];
@@ -41,8 +37,6 @@ export class PullHook {
     preaction: 'Release to refresh',
     action: 'Loading data...'
   };
-
-  boundOnAction: Function;
 
   getRandomName() {
     const names = ['Oscar', 'Max', 'Tiger', 'Sam', 'Misty', 'Simba', 'Coco', 'Chloe', 'Lucy', 'Missy'];
@@ -73,21 +67,20 @@ export class PullHook {
 
   ngOnInit() {
     this.updateData();
-    this.boundOnAction = this.onAction.bind(this);
   }
 
-  onAction(done: Function) {
+  onAction($event) {
     if (this.timeout) {
       clearTimeout(this.timeout);
     }
 
     this.timeout = setTimeout(() => {
       this.updateData();
-      done();
+      $event.done();
     }, 1000);
   }
 
-  onChangeState(pullHook) {
-    this.message = this.messages[pullHook.state];
+  onChangeState($event) {
+    this.message = this.messages[$event.state];
   }
 }
