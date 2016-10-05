@@ -6,6 +6,14 @@
 	<div class="page__background"></div>
 	<div class="page__content">
 		<ons-list>
+			<ons-list-header>Dialogs</ons-list-header>
+			<ons-list-item (click)="showDialog()">Dialog</ons-list-item>
+			<ons-list-item>
+				<div class="center">Popover</div>
+				<div class="right">
+					<ons-button (click)="showPopover($event)">Show</ons-button>
+				</div>
+			</ons-list-item>
 			<ons-list-header>Notifications</ons-list-header>
 			<ons-list-item (click)="alert()">Alert Dialog</ons-list-item>
 			<ons-list-item (click)="confirm()">Confirmation Dialog</ons-list-item>

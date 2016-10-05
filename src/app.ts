@@ -6,18 +6,18 @@ import {HttpModule} from '@angular/http';
 import {RouterModule} from '@angular/router';
 import {OnsenModule} from 'angular2-onsenui';
 
-import {routing, appRoutingProviders} from './app.routing';
-import {KitchenSink}           from './app/kitchen-sink';
-import {Tabbar}                from './app/components/tabbar/tabbar';
-import {Home}                  from './app/components/home/home';
-import {PullHook}              from './app/components/home/demos/pull-hook';
-import {LazyRepeat}            from './app/components/home/demos/lazy-repeat';
-import {Splitter}              from './app/components/home/demos/splitter';
-import {Fab}                   from './app/components/home/demos/fab';
-import {SpeedDial}             from './app/components/home/demos/speed-dial';
-import {Animations, TempPage}  from './app/components/animations/animations';
-import {Forms}                 from './app/components/forms/forms';
-import {Dialogs}               from './app/components/dialogs/dialogs';
+import {routing, appRoutingProviders}      from './app.routing';
+import {KitchenSink}                       from './app/kitchen-sink';
+import {Tabbar}                            from './app/components/tabbar/tabbar';
+import {Home}                              from './app/components/home/home';
+import {PullHook}                          from './app/components/home/demos/pull-hook';
+import {LazyRepeat}                        from './app/components/home/demos/lazy-repeat';
+import {Splitter}                          from './app/components/home/demos/splitter';
+import {Fab}                               from './app/components/home/demos/fab';
+import {SpeedDial}                         from './app/components/home/demos/speed-dial';
+import {Animations, TempPage}              from './app/components/animations/animations';
+import {Forms}                             from './app/components/forms/forms';
+import {Dialogs, TempDialog, TempPopover}  from './app/components/dialogs/dialogs';
 
 // enableProdMode()
 
@@ -42,6 +42,8 @@ import {Dialogs}               from './app/components/dialogs/dialogs';
         TempPage,
         Forms,
         Dialogs,
+        TempDialog,
+        TempPopover,
     ],
     entryComponents: [
         PullHook,
@@ -50,6 +52,8 @@ import {Dialogs}               from './app/components/dialogs/dialogs';
         Fab,
         SpeedDial,
         TempPage,
+        TempDialog,
+        TempPopover,
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

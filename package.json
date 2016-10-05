@@ -1,6 +1,6 @@
 {
   "name": "angular2-onsenui-kitchensink",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Kitchen Sink example for Angular 2 bindings for Onsen UI.",
   "scripts": {
     "typings-install": "typings install",
