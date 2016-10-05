@@ -5,7 +5,6 @@ import {onsPlatform} from 'angular2-onsenui';
   selector: 'tabbar',
   templateUrl: 'app/components/tabbar/tabbar.html',
   styleUrls: ['app/components/tabbar/tabbar.css'],
-  providers: [],
 })
 export class Tabbar {
   tabs: Array<any>;

@@ -13,7 +13,6 @@ import {OnsNavigator} from 'angular2-onsenui';
       margin: 100px auto 0;
     }
   `],
-  providers: [],
 })
 export class TempPage {
   animations = ['none', 'fade', 'slide', 'lift'];
@@ -29,7 +28,6 @@ export class TempPage {
 @Component({
   selector: 'animations',
   templateUrl: 'app/components/animations/animations.html',
-  providers: [],
 })
 export class Animations {
   animations = ['none', 'fade', 'slide', 'lift'];

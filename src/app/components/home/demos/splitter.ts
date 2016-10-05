@@ -32,7 +32,6 @@ import {Component} from '@angular/core';
     </ons-splitter>
   </div>
   `,
-  providers: [],
 })
 export class Splitter {
 

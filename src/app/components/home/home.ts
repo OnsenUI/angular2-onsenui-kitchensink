@@ -10,7 +10,6 @@ import {SpeedDial} from './demos/speed-dial';
 @Component({
   selector: 'home',
   templateUrl: 'app/components/home/home.html',
-  providers: [],
 })
 export class Home {
 

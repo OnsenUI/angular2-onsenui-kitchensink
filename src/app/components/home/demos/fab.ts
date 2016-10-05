@@ -13,7 +13,6 @@ import {Component} from '@angular/core';
     <ons-fab position="bottom right" ripple>+</ons-fab>
   </div>
   `,
-  providers: [],
 })
 export class Fab {
 

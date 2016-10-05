@@ -17,7 +17,6 @@ import {Component} from '@angular/core';
     </ons-list>
   </div>
   `,
-  providers: [],
 })
 export class LazyRepeat {
   items: Array<any> = [];

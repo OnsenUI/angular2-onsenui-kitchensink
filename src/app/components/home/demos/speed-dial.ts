@@ -19,7 +19,6 @@ import {Component} from '@angular/core';
     </ons-speed-dial>
   </div>
   `,
-  providers: [],
 })
 export class SpeedDial {
 }

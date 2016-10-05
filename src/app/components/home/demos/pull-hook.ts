@@ -24,7 +24,6 @@ import {Component} from '@angular/core';
     </div>
   </div>
   `,
-  providers: [],
 })
 export class PullHook {
   data: Array<any> = [];
